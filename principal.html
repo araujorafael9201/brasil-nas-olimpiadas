@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Link para o Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Título da Página -->
+        <title>Brasil nas Olimpíadas</title>
+
+        <!-- Estilo para controlar o tamanho do carousel -->
+        <style>
+            .carousel .carousel-inner {
+                max-height: 50vh;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- Container para a página toda -->
+        <div style="height: 100vh;" class="princ">
+            <!-- Navbar Escuro -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Medalhas</a>
+                <!-- Botão para abrir navbar em telas pequenas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Conteúdo da Navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Lista de Medalhas
+                            </a>
+                            <!-- Menu Dropdown -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="paginas/geral.html">Geral</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="paginas/futebol.html">Futebol</a></li>
+                                <li><a class="dropdown-item" href="paginas/judo.html">Judô</a></li>
+                                <li><a class="dropdown-item" href="paginas/ginastica.html">Ginástica</a></li>
+                                <li><a class="dropdown-item" href="paginas/atletismo.html">Atletismo</a></li>
+                                <li><a class="dropdown-item" href="paginas/boxe.html">Boxe</a></li>
+                                <li><a class="dropdown-item" href="paginas/canoagem.html">Canoagem</a></li>
+                                <li><a class="dropdown-item" href="paginas/maratonaaq.html">Maratona Aquática</a></li>
+                                <li><a class="dropdown-item" href="paginas/natacao.html">Natação</a></li>
+                                <li><a class="dropdown-item" href="paginas/skate.html">Skate</a></li>
+                                <li><a class="dropdown-item" href="paginas/surfe.html">Surfe</a></li>
+                                <li><a class="dropdown-item" href="paginas/tenis.html">Tênis</a></li>
+                                <li><a class="dropdown-item" href="paginas/vela.html">Vela</a></li>
+                                <li><a class="dropdown-item" href="paginas/volei.html">Vôlei</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <!-- Botão Modo Escuro -->
+                <button class="btn btn-success center">
+                    Ativar / Desativar Modo Escuro
+                </button>
+            </nav>
+            
+           
+
+            <!-- Carousel com Controles -->
+            <div id="carouselExampleControls" class="carousel slide container mt-3" data-bs-ride="carousel">
+                <!-- Coteúdo do Carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="static/futebol.png"  style="max-width: 100%; height:auto;" alt="...">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="static/ginastica.png"  alt="...">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="static/skate.png"  alt="..."> 
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="static/seila.png"  alt="...">
+
+                    </div>
+                </div>
+                </div>
+                <!-- Botões para controlar o carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <!-- Texto  -->
+            <h5 class="text-center mt-3">As Olimpíadas de Tokyo 2020 foram muito positivas para o Brasil. Com um total de 21 medalhas, o país conseguiu sua melhor marca na história.</h5>
+            
+            
+        </div>
+
+        <!-- Script do Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!-- Script para Modo Escuro -->
+        <script>
+            // Definição de variáveis
+            let btn = document.querySelector('.btn')
+            let container = document.querySelector('.princ')
+            let texto = document.querySelector('.text-center')
+            let escuro = false
+
+            // Event Listener para o Botão
+            btn.addEventListener('click', () => {
+                escuro == false? escuro = true : escuro = false;
+                if (escuro == false) {
+                    container.classList.remove('bg-secondary')
+                    container.classList.add('bg-white')
+                    texto.classList.add('text-secondary')
+                    texto.classList.remove('text-white')
+                } else {
+                    container.classList.add('bg-secondary')
+                    container.classList.remove('bg-white')
+                    texto.classList.remove('text-secondary')
+                    texto.classList.add('text-white')
+                }
+            })
+
+            // Define as cores quando a página iniciar
+            window.onload = () => {
+                console.log('bora')
+                if (escuro == false) {
+                    container.classList.remove('bg-secondary')
+                    container.classList.add('bg-white')
+                    texto.classList.add('text-secondary')
+                    texto.classList.remove('text-white')
+                } else {
+                    container.classList.add('bg-secondary')
+                    container.classList.remove('bg-white')
+                    texto.classList.remove('text-secondary')
+                    texto.classList.add('text-white')
+                }
+            }
+        </script>
+    </body>
+</html>

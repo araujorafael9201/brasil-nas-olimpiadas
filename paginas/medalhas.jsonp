@@ -1,0 +1,143 @@
+medalhas = [{
+    "Atletismo": {
+        "Masculino": {
+            "400m Com Barreiras": {
+                "A. dos Santos": "Bronze"
+            },
+            "Salto Com Vara": {
+                "T. Braz": "Bronze"
+            }
+        },
+        "Feminino": {
+        }
+    },
+    "Boxe": {
+        "Masculino": {
+            "Peso Médio": {
+                "H. Souza": "Ouro"
+            },
+            "Peso Pesado": {
+                "A. Teixeira": "Bronze"
+            }
+        },
+        "Feminino": {
+            "Peso Leve": {
+                "B. Ferreira": "Prata"
+            }
+        }
+    },
+    "Canoagem": {
+        "Masculino": {
+            "C-1 1000m": {
+                "L. Queiroz": "Ouro"
+            }
+        },
+        "Feminino": {
+        }
+    },
+    "Futebol": {
+        "Masculino": {
+            "Torneio Masculino": {
+                "Seleção Olímpica": "Ouro"
+            }
+        },
+        "Feminino": {
+        }
+    },
+    "Ginástica Artística": {
+        "Masculino": {
+        },
+        "Feminino": {
+            "Salto": {
+                "R. Andrade": "Ouro"
+            },
+            "Artística Geral": {
+                "R. Andrade": "Prata"
+            }
+        }
+    },
+    "Judô": {
+        "Masculino": {
+            "Até 66kg": {
+                "D. Cargnin": "Bronze"
+            }
+        },
+        "Feminino": {
+            "Até 78kg": {
+                "M. Aguiar": "Bronze"
+            }
+        }
+    },
+    "Maratona Aquática": {
+        "Masculino": {
+        },
+        "Feminino": {
+            "10km": {
+                "A.M. Cunha": "Ouro"
+            }
+        }
+    },
+    "Natação": {
+        "Masculino": {
+            "200m Livre": {
+                "F. Scheffer": "Bronze"
+            },
+            "50m Livre": {
+                "B. Fratus": "Bronze"
+            }
+        },
+        "Feminino": {
+        }
+    },
+    "Skate": {
+        "Masculino": {
+            "Park": {
+                "P. Barros": "Prata"
+            },
+            "Street": {
+                "K. Hoefler": "Prata"
+            }
+        },
+        "Feminino": {
+            "Street": {
+                "R. Leal": "Prata"
+            }
+        }
+    },
+    "Surfe": {
+        "Masculino": {
+            "Shortboard": {
+                "I. Ferreira": "Ouro"
+            }
+        },
+        "Feminino": {
+        }
+    },
+    "Tênis": {
+        "Masculino": {
+        },
+        "Feminino": {
+            "Duplas": {
+                "L. Stefani, L. Pigossi": "Bronze"
+            }
+        }
+    },
+    "Vela": {
+        "Masculino": {
+        },
+        "Feminino": {
+            "49er FX": {
+                "K. Kunze, M. Grael": "Ouro"
+            }
+        }
+    },
+    "Vôlei": {
+        "Masculino": {
+        },
+        "Feminino": {
+            "Torneio Feminino": {
+                "Seleção Olímpica": "Prata"
+            }
+        }
+    }
+}]

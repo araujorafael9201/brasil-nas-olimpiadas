@@ -116,20 +116,20 @@
         </div>
 
         <!-- Script do Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+        <script src="./paginas/medalhas.jsonp"></script>
         <!-- Script para Modo Escuro -->
         <script>
             // Definição de variáveis
             let btn = document.querySelector('.btn')
             let container = document.querySelector('.princ')
             let texto = document.querySelector('.text-center')
-            let escuro = false
+            let cor = "claro"
 
             // Event Listener para o Botão
             btn.addEventListener('click', () => {
-                escuro == false? escuro = true : escuro = false;
-                if (escuro == false) {
+                cor == 'claro'? cor = 'escuro' : cor = 'claro';
+                if (cor == 'claro') {
                     container.classList.remove('bg-secondary')
                     container.classList.add('bg-white')
                     texto.classList.add('text-secondary')
@@ -140,12 +140,12 @@
                     texto.classList.remove('text-secondary')
                     texto.classList.add('text-white')
                 }
+
             })
 
             // Define as cores quando a página iniciar
             window.onload = () => {
-                console.log('bora')
-                if (escuro == false) {
+                if (cor == "claro") {
                     container.classList.remove('bg-secondary')
                     container.classList.add('bg-white')
                     texto.classList.add('text-secondary')
